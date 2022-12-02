@@ -36,7 +36,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item {{ moduleName == 'dashboard' ? 'menu-open' : ''}} {{ moduleName == 'dashboard2' ? 'menu-open' : ''}}">
-            <a href="#" class="nav-link {{ moduleName == 'dashboard' ? 'active' : ''}} {{ moduleName == 'dashboard2' ? 'active' : '' }} {{ moduleName == 'dashboard3' ? 'active' : '' }}">
+            <a href="#" class="nav-link {{ moduleName == 'dashboard' ? 'active' : ''}} {{ moduleName == 'dashboard2' ? 'active' : '' }}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -65,11 +65,19 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/mahasiswa" class="nav-link {{ moduleName == 'mahasiswa' ? 'active' : '' }}">
+            <a [routerLink]="['/mahasiswa']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'mahasiswa' ? 'active' : '' }}">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Mahasiswa
                 <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/mahasiswa" class="nav-link {{ moduleName == 'mahasiswa' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Mahasiswa
               </p>
             </a>
           </li>
