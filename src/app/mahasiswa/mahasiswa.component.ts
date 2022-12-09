@@ -101,8 +101,11 @@ export class MahasiswaComponent implements OnInit, AfterViewInit {
     }
 
     alamat = encodeURIComponent(alamat);
+    jenisKelamin = encodeURIComponent(jenisKelamin);
+    jp = encodeURIComponent(jp);
     nama = encodeURIComponent(nama);
     nim = encodeURIComponent(nim);
+    statusNikah = encodeURIComponent(statusNikah);
     tahunMasuk = encodeURIComponent(tahunMasuk);
     tanggalLahir = encodeURIComponent(tanggalLahir);
     tempatLahir = encodeURIComponent(tempatLahir);
