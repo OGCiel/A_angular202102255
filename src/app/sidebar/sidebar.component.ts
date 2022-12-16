@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class SidebarComponent {
 
   @Input() moduleName: string="";
-
+  
   constructor(private router : Router) {
     
   }
@@ -18,6 +18,11 @@ export class SidebarComponent {
     var userId = sessionStorage.getItem("userId");
     sessionStorage.clear();
     this.router.navigate(["/login"]);
+  }
+
+  getName() {
+    var x = sessionStorage.getItem("userId");
+    return x;
   }
 
 }
