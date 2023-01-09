@@ -17,6 +17,7 @@ import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { ForexComponent } from './forex/forex.component';
+import { CuacaComponent } from './cuaca/cuaca.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ForexComponent } from './forex/forex.component';
     Dashboard2Component,
     Dashboard3Component,
     MahasiswaComponent,
-    ForexComponent
+    ForexComponent,
+    CuacaComponent
   ],
   imports: [
     BrowserModule,

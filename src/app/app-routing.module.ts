@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { CuacaComponent } from './cuaca/cuaca.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "signup", component: SignupComponent },
   { path: "mahasiswa", component: MahasiswaComponent, canActivate: [OtentikasiGuard] },
   { path: "forex", component: ForexComponent, canActivate: [OtentikasiGuard]},
+  { path: "cuaca", component: CuacaComponent, canActivate: [OtentikasiGuard]},
   { path: "", redirectTo: "login", pathMatch: "full" }
 ];
 
